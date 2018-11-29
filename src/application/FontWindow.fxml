@@ -17,8 +17,8 @@
       <Label layoutX="167.0" layoutY="14.0" prefHeight="17.0" prefWidth="145.0" text="Skriftstil:" />
       <Label layoutX="322.0" layoutY="14.0" prefHeight="17.0" prefWidth="64.0" text="Størrelse:" />
       <Label fx:id="textExample" layoutX="119.0" layoutY="255.0" prefHeight="76.0" prefWidth="162.0" />
-      <Label layoutX="172.0" layoutY="238.0" prefHeight="17.0" prefWidth="56.0" text="Exsempel" />
+      <Label layoutX="172.0" layoutY="238.0" prefHeight="17.0" prefWidth="56.0" text="Eksempel" />
       <Button fx:id="okButton" layoutX="214.0" layoutY="358.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="71.0" text="OK" />
-      <Button fx:id="cancelButton" layoutX="299.0" layoutY="358.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="71.0" text="Avbryt" />
+      <Button fx:id="cancelButton" layoutX="299.0" layoutY="358.0" mnemonicParsing="false" onAction="#CloseFontWindow" prefHeight="25.0" prefWidth="71.0" text="Avbryt" />
    </children>
 </AnchorPane>

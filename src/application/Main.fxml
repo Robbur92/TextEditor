@@ -12,24 +12,24 @@
         <menus>
           <Menu fx:id="fileMenu" text="Fil">
             <items>
-              <MenuItem fx:id="newFile" text="Ny" />
-              <MenuItem fx:id="openFile" onAction="#SelectOpen" text="Åpne..." />
-              <MenuItem fx:id="saveFile" onAction="#SelectSaveAs" text="Lagre" />
-              <MenuItem fx:id="saveFileAs" onAction="#SelectSaveAs" text="Lagre som..." />
+              <MenuItem fx:id="newFile" onAction="#CreateNewFile" text="Ny" />
+              <MenuItem fx:id="openFile" onAction="#OpenFile" text="Åpne..." />
+              <MenuItem fx:id="saveFile" onAction="#SaveToCurrentFile" text="Lagre" />
+              <MenuItem fx:id="saveFileAs" onAction="#SaveFileAs" text="Lagre som..." />
               <SeparatorMenuItem />
-              <MenuItem fx:id="closeEditor" text="Avslutt" />
+              <MenuItem fx:id="closeEditor" onAction="#CloseWindow" text="Avslutt" />
             </items>
           </Menu>
           <Menu fx:id="editMenu" text="Rediger">
             <items>
               <MenuItem fx:id="undoText" text="Angre" />
               <SeparatorMenuItem />
-              <MenuItem fx:id="cutText" text="Klipp ut" />
-              <MenuItem fx:id="copyText" text="Kopier" />
-              <MenuItem fx:id="pasteText" text="Lim inn" />
-              <MenuItem fx:id="deleteText" text="Slett" />
+              <MenuItem fx:id="cutText" onAction="#CutSelectedText" text="Klipp ut" />
+              <MenuItem fx:id="copyText" onAction="#CopySelectedText" text="Kopier" />
+              <MenuItem fx:id="pasteText" onAction="#PasteCopiedText" text="Lim inn" />
+              <MenuItem fx:id="deleteText" onAction="#DeleteSelected" text="Slett" />
               <SeparatorMenuItem />
-              <MenuItem fx:id="markAllText" text="Merk alt" />
+              <MenuItem fx:id="markAllText" onAction="#SelectAllText" text="Merk alt" />
             </items>
           </Menu>
           <Menu fx:id="formatMenu" text="Format">
